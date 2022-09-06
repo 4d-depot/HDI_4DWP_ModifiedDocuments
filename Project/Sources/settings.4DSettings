@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><preferences stamp="12">
+	<com.4d>
+		<general component_classStore_name="" startup_environnement="1"/>
+		<interface>
+			<user splash_screen="false"/>
+		</interface>
+		<web>
+			<standalone_server>
+				<configuration publish_at_startup="true"/>
+			</standalone_server>
+		</web>
+	</com.4d>
+</preferences>

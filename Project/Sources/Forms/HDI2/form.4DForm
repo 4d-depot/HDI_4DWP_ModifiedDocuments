@@ -1,0 +1,526 @@
+{
+	"destination": "detailScreen",
+	"windowMinWidth": 1200,
+	"windowMaxWidth": 32000,
+	"windowMinHeight": 620,
+	"windowMaxHeight": 32000,
+	"width": 1200,
+	"height": 860,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onUnload",
+		"onTimer",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Tabs": {
+					"type": "tab",
+					"top": 20,
+					"left": 20,
+					"width": 1160,
+					"height": 820,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Form:C1466.tabControl",
+					"dataSourceTypeHint": "object",
+					"action": "gotoPage",
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Tabs.4dm"
+				},
+				"Line": {
+					"type": "line",
+					"top": 0,
+					"left": 600,
+					"width": 1,
+					"height": 860,
+					"visibility": "hidden",
+					"stroke": "#da70d6",
+					"strokeDashArray": [
+						6,
+						2
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"WParea2": {
+					"type": "write",
+					"top": 80,
+					"left": 140,
+					"width": 920,
+					"height": 720,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "WParea1",
+					"enterable": false,
+					"focusable": false,
+					"hideFocusRing": true,
+					"scrollbarVertical": "automatic",
+					"scrollbarHorizontal": "automatic",
+					"showSelection": true,
+					"showHorizontalRuler": false,
+					"showVerticalRuler": false,
+					"layoutMode": "embedded",
+					"borderStyle": "none",
+					"events": []
+				}
+			}
+		},
+		{
+			"objects": {
+				"Group Box1": {
+					"type": "groupBox",
+					"text": "Style",
+					"top": 595,
+					"left": 40,
+					"width": 258,
+					"height": 227,
+					"sizingY": "move"
+				},
+				"btnTrace": {
+					"type": "checkbox",
+					"text": "Trace code",
+					"top": 810,
+					"left": 1030,
+					"width": 120,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "Form:C1466.trace",
+					"sizingX": "move",
+					"sizingY": "move",
+					"enterable": true,
+					"focusable": false
+				},
+				"Static Picture1": {
+					"type": "picture",
+					"top": 954,
+					"left": 995,
+					"width": 50,
+					"height": 50,
+					"picture": "/RESOURCES/Images/new.png",
+					"pictureFormat": "scaled",
+					"sizingX": "move"
+				},
+				"WParea1": {
+					"type": "write",
+					"top": 60,
+					"left": 700,
+					"width": 440,
+					"height": 670,
+					"sizingX": "move",
+					"sizingY": "grow",
+					"dataSource": "WParea1",
+					"enterable": false,
+					"focusable": false,
+					"hideFocusRing": true,
+					"scrollbarVertical": "automatic",
+					"scrollbarHorizontal": "automatic",
+					"showSelection": true,
+					"showHorizontalRuler": false,
+					"showVerticalRuler": false,
+					"layoutMode": "embedded",
+					"borderStyle": "none",
+					"events": []
+				},
+				"WP2": {
+					"type": "write",
+					"top": 60,
+					"left": 40,
+					"width": 620,
+					"height": 520,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "WParea2",
+					"enterable": true,
+					"focusable": true,
+					"hideFocusRing": true,
+					"scrollbarVertical": "automatic",
+					"scrollbarHorizontal": "automatic",
+					"showSelection": true,
+					"showHorizontalRuler": false,
+					"showVerticalRuler": false,
+					"layoutMode": "page",
+					"borderStyle": "none",
+					"events": [
+						"onAfterEdit"
+					],
+					"showReferences": false,
+					"method": "ObjectMethods/WP2.4dm"
+				},
+				"btnReset": {
+					"type": "button",
+					"text": "Reset",
+					"top": 802,
+					"left": 700,
+					"width": 192,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btnReset.4dm",
+					"fontWeight": "bold",
+					"sizingY": "move"
+				},
+				"Check Box": {
+					"type": "checkbox",
+					"text": "Bold",
+					"top": 678,
+					"left": 168,
+					"width": 80,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"action": "fontBold",
+					"sizingY": "move",
+					"focusable": false
+				},
+				"Check Box1": {
+					"type": "checkbox",
+					"text": "Italic",
+					"top": 696,
+					"left": 168,
+					"width": 80,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"action": "fontItalic",
+					"sizingY": "move",
+					"focusable": false
+				},
+				"Group Box": {
+					"type": "groupBox",
+					"text": "View options",
+					"top": 595,
+					"left": 322,
+					"width": 338,
+					"height": 227,
+					"sizingY": "move"
+				},
+				"btn_visibleHeaders": {
+					"type": "checkbox",
+					"top": 702,
+					"left": 531,
+					"width": 30,
+					"height": 24,
+					"tooltip": ":xliff:showHideHeaders",
+					"action": "visibleHeaders",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/View/Header_24.png",
+					"iconFrames": 4,
+					"style": "toolbar",
+					"sizingY": "move"
+				},
+				"btn_visibleFooters": {
+					"type": "checkbox",
+					"top": 702,
+					"left": 559,
+					"width": 30,
+					"height": 24,
+					"tooltip": ":xliff:showHideFooters",
+					"action": "visibleFooters",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/View/Footer_24.png",
+					"iconFrames": 4,
+					"style": "toolbar",
+					"sizingY": "move"
+				},
+				"btn_visibleHorizontalRuler": {
+					"type": "checkbox",
+					"top": 754,
+					"left": 561,
+					"width": 30,
+					"height": 24,
+					"tooltip": ":xliff:showHideHiddenHorizontalRuler",
+					"action": "visibleHorizontalRuler",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/View/Ruler_24.png",
+					"iconFrames": 4,
+					"style": "toolbar",
+					"sizingY": "move"
+				},
+				"btn_visibleHiddenChars": {
+					"type": "checkbox",
+					"top": 677,
+					"left": 529,
+					"width": 30,
+					"height": 24,
+					"tooltip": ":xliff:showHideHiddenChars",
+					"action": "visibleHiddenChars",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/View/InvisibleCharacters_24.png",
+					"iconFrames": 4,
+					"style": "toolbar",
+					"sizingY": "move"
+				},
+				"btn_visiblePageFrames": {
+					"type": "checkbox",
+					"top": 728,
+					"left": 529,
+					"width": 30,
+					"height": 24,
+					"tooltip": ":xliff:showHideFrames",
+					"action": "visiblePageFrames",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/View/Frames_24.png",
+					"iconFrames": 4,
+					"style": "toolbar",
+					"sizingY": "move"
+				},
+				"Popup_zoom": {
+					"type": "dropdown",
+					"top": 782,
+					"left": 540,
+					"width": 90,
+					"height": 20,
+					"tooltip": ":xliff:zoom",
+					"focusable": false,
+					"action": "zoom",
+					"sizingY": "move"
+				},
+				"btn_visibleVerticalRuler": {
+					"type": "checkbox",
+					"top": 754,
+					"left": 529,
+					"width": 30,
+					"height": 24,
+					"tooltip": ":xliff:showHideHiddenVerticalRuler",
+					"action": "visibleVerticalRuler",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/View/RulerV_24.png",
+					"iconFrames": 4,
+					"style": "toolbar",
+					"sizingY": "move"
+				},
+				"Text": {
+					"type": "text",
+					"text": "Display invisible chars:",
+					"top": 680,
+					"left": 340,
+					"width": 180,
+					"height": 16,
+					"textAlign": "right",
+					"sizingY": "move"
+				},
+				"Text1": {
+					"type": "text",
+					"text": "Display headers / footers:",
+					"top": 706,
+					"left": 340,
+					"width": 180,
+					"height": 16,
+					"textAlign": "right",
+					"sizingY": "move"
+				},
+				"Text2": {
+					"type": "text",
+					"text": "Display frames:",
+					"top": 732,
+					"left": 340,
+					"width": 180,
+					"height": 16,
+					"textAlign": "right",
+					"sizingY": "move"
+				},
+				"Text3": {
+					"type": "text",
+					"text": "Display rulers:",
+					"top": 758,
+					"left": 340,
+					"width": 180,
+					"height": 16,
+					"textAlign": "right",
+					"sizingY": "move"
+				},
+				"Text4": {
+					"type": "text",
+					"text": "Zoom factor:",
+					"top": 784,
+					"left": 340,
+					"width": 180,
+					"height": 16,
+					"textAlign": "right",
+					"sizingY": "move"
+				},
+				"Check Box2": {
+					"type": "checkbox",
+					"text": "Underline",
+					"top": 716,
+					"left": 168,
+					"width": 80,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"action": "fontUnderline",
+					"sizingY": "move",
+					"focusable": false
+				},
+				"btn_alignLeft": {
+					"type": "checkbox",
+					"top": 756,
+					"left": 168,
+					"width": 30,
+					"height": 24,
+					"tooltip": ":xliff:alignLeft",
+					"action": "textAlign?value=left",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Home/AlignLeft_24.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "toolbar",
+					"sizingY": "move"
+				},
+				"btn_alignCenter": {
+					"type": "checkbox",
+					"top": 756,
+					"left": 198,
+					"width": 30,
+					"height": 24,
+					"tooltip": ":xliff:center",
+					"action": "textAlign?value=center",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Home/AlignCenter_24.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "toolbar",
+					"sizingY": "move"
+				},
+				"btn_alignRight": {
+					"type": "checkbox",
+					"top": 756,
+					"left": 228,
+					"width": 30,
+					"height": 24,
+					"tooltip": ":xliff:alignRight",
+					"action": "textAlign?value=right",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Home/AlignRight_24.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "toolbar",
+					"sizingY": "move"
+				},
+				"btn_alignJustify": {
+					"type": "checkbox",
+					"top": 756,
+					"left": 258,
+					"width": 30,
+					"height": 24,
+					"tooltip": ":xliff:justify",
+					"action": "textAlign?value=justify",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Home/FullJustification_24.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "toolbar",
+					"sizingY": "move"
+				},
+				"Text5": {
+					"type": "text",
+					"text": "Style:",
+					"top": 680,
+					"left": 61,
+					"width": 93,
+					"height": 16,
+					"textAlign": "right",
+					"sizingY": "move"
+				},
+				"Text6": {
+					"type": "text",
+					"text": "Alignment:",
+					"top": 760,
+					"left": 61,
+					"width": 93,
+					"height": 16,
+					"textAlign": "right",
+					"sizingY": "move"
+				},
+				"Text7": {
+					"type": "text",
+					"text": "The settings below will modify the document. You can also just type text in the document itself!",
+					"top": 620,
+					"left": 60,
+					"width": 223,
+					"height": 66,
+					"textAlign": "left",
+					"fontStyle": "italic",
+					"stroke": "#0000cd",
+					"sizingY": "move"
+				},
+				"Text8": {
+					"type": "text",
+					"text": "The settings below are only view properties. They will NOT modify the document.",
+					"top": 620,
+					"left": 346,
+					"width": 283,
+					"height": 66,
+					"textAlign": "left",
+					"fontStyle": "italic",
+					"stroke": "#0000cd",
+					"sizingY": "move"
+				},
+				"Modified": {
+					"type": "text",
+					"text": "Modified document!",
+					"top": 754,
+					"left": 700,
+					"width": 260,
+					"height": 36,
+					"fontSize": 24,
+					"stroke": "#ff6347",
+					"fontWeight": "bold",
+					"visibility": "hidden",
+					"sizingY": "move"
+				},
+				"cbBox": {
+					"type": "checkbox",
+					"text": "Bold (by programming)",
+					"top": 788,
+					"left": 78,
+					"width": 180,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"action": "",
+					"sizingY": "move",
+					"focusable": false,
+					"method": "ObjectMethods/cbBox.4dm",
+					"dataSource": "Form:C1466.cbBox"
+				}
+			}
+		}
+	],
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"geometryStamp": 5633,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"menuBar": "Menu Bar #1"
+}
